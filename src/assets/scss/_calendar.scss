@@ -1,0 +1,50 @@
+$react-calendar-radius: 10px !important;
+
+.react-calendar {
+	width: 100% !important;
+	background: #3f3f43 !important;
+	border: transparent !important;
+	border-radius: $react-calendar-radius;
+	overflow: hidden;
+	padding: 15px;
+
+	& .react-calendar {
+		&__navigation {
+			&__arrow {
+				border-radius: $react-calendar-radius;
+				&:hover {
+					background-color: $theme-color !important;
+					color: $white !important;
+				}
+			}
+			&__label {
+				border-radius: $react-calendar-radius;
+				&:hover {
+					background-color: $theme-color !important;
+					color: $white !important;
+				}
+			}
+		}
+
+		&__tile {
+			border-radius: $react-calendar-radius;
+
+			&--now {
+				background: $theme-color !important;
+				color: $white !important;
+			}
+
+			&--active {
+				background: $white !important;
+				color: $black !important;
+			}
+
+			&:enabled {
+				&:hover {
+					background: $white !important;
+					color: $black !important;
+				}
+			}
+		}
+	}
+}
